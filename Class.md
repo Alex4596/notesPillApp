@@ -1,5 +1,10 @@
 
 ### su template
+blueprint
+je to navrh ako ma nieco vyzerat a fungovat
+snazime sa pouzivat pre preddefinovanie kodu
+aby sme menej pisali
+ale musime viac naplanovat
 
 ```
 class Car {
@@ -254,6 +259,19 @@ class Car {
 	- je ked sa meni z dedenia methoda
 ### TypeScript Koncepty:
 - #### Abstraction:
+ - ak pridame pred classu keyword `abstract`
+ - hovorime ze class nema mat instanciu
+ - takato trieda sa pouzije pri dedeni
+ - akysi blueprint pre blueprint
+ - ```
+    abstract class Vehicle {
+     ...
+    }
+
+    class Car extends Vehicle {
+     ...
+    }
+   ```
 - #### Implementation:
 
 
