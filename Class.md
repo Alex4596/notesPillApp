@@ -1,6 +1,7 @@
 
 ### su template
 
+```
 class Car {
 	static daco = 5;
 	constructor(brand, model) {
@@ -11,20 +12,46 @@ class Car {
 		console.log("Driving...")
 	}
 }
+```
+
 
 ## Volanie:
 
 // Instancia classy = object
-const car = new Car("Ford', Mustang);
+`const car = new Car("Ford', Mustang);`
 // volanie methody na object
-car.drive()
+`car.drive()`
 // volanie statickeho fieldu nie z objectu ale z classy
-console.log(Car.daco);
+`console.log(Car.daco);`
 
-car = object premenna
-Car = class
+`car = object premenna`
+`Car = class`
 
 ### Keyword
+- #### this:
+	- robi referenciu na aktualnu referenciu classy alebo na dany objekt
+	- ```
+		class Car {
+			static daco = 5;
+			constructor(brand, model) {
+				this.brand = brand;
+				this.model = model;
+			}
+			displayInfo() {
+				console.log(this.brand + ": " + this.model);
+			} 
+		}
+		
+		const car1 = new Car("Renault", "Clio");
+		car1.displayInfo();
+		// OUTPUT: "Renault: Clio"
+		// "This" v tomto pripade referuje na objekt ulozeny v premenne car1 
+		
+		const car2 = new Car("Porsche", "963");
+		car2.displayInfo();
+		// OUTPUT: "Porsche: 963" 
+		// "This" v tomto pripade referuje na objekt ulozeny v premenne car2
+	  ```
 - #### static:
 	- fieldy a methody ktore patria class, nie objektu;
 	- // bez instancie
@@ -73,7 +100,160 @@ Car = class
 	- alokuje pamat
 	- class => objekt
 	- `const car1 = new Car()`
+- #### extends:
+	- inheritance / dedenie
+	- rozsirenie existujucej class
+	- class Van je trieda, ktora pouziva vlastnosti a methody z triedy Car
+	- napr:
+	- ``` 
+	  class Van extends Car {
+		  constructor(brand, model, weight) {
+			  super(brand, model);
+			  this.weight = weight;
+		  }
+	  }
+	  ```
+- #### super:
+	- Je referencia na Parent class teda Van class
+	- podobne ako "this"
 
-
+### Koncepty:
+- #### Inheritance:
+	- Rozsirenie classy pomocou `extends`
+	- napr. mame Human class
+	- chceme vytvorit SuperHuman class
+	- vlastnosti, ktore ma Human bude mat aj SuperHuman takze ju iba rozsirime nepotrebujeme pisat ten isty kod
+- #### Composition:
+	- Je technika pri objektovom programovani, kedy napr. mame Human class a Monster class a chceme aby mali nejake vlastnosti alebo funkcie spolocne napr. funkcia utok a obrana
+	- mozeme mat viac tychto vlastnosti
+	- ```
+	  class BasicCombat {
+		  constructor(dmg, def) {
+			  this.dmg = dmg;
+			  this.def = def;
+		  }
+		  
+		  attack(hp) {
+			  return hp - this.dmg;
+		  }
+		  
+		  defence(damage) {
+			  return damage - this.def;
+		  }
+	  }
+	  
+	  class Monster {
+		  constructor(name, hp, dmg, def) {
+			  this.name = name;
+			  this.hp = hp;
+			  this.combatProperties = new BasicCombat(dmg, def);
+		  }
+		  
+		  attack(hp) {
+			  return this.combatProperties.attack(hp);
+		  }
+		  
+		  defence(hp) {
+			  return this.combatProperties.defence(hp);
+		  }
+		  
+		  takeDamage(damage) {
+			this.hp -= damage;
+		  }
+	  }
+	  
+	  class Human {
+		  constructor(name, hp, dmg, def) {
+			  this.name = name;
+			  this.hp = hp;
+			  this.combatProperties = new BasicCombat(dmg, def);
+		  }
+		  
+		  attack(hp) {
+			  return this.combatProperties.attack(hp);
+		  }
+		  
+		  defence(hp) {
+			  return this.combatProperties.defence(hp);
+		  }
+		  
+		  takeDamage(damage) {
+			this.hp -= damage;
+		  }
+	  }
+	  
+	  
+	  
+	  // Realny Kod, v ktorom sa vsetko deje:
+	  const human1 = new Human("Dezo", 100, 3, 1);
+	  const monster1 = new Monster("Rado", 110, 2, 2);
+	  
+	  
+	  human1.takeDamage(
+		  human1.defence(
+			  monster1.attack(human1.hp)
+		  )
+	  );
+	  
+	  // monster1 ubera utoci na hp human1 a human1 obranuje a dostava poskodenie
+	  ```
+- #### Overload:
+	- Mozeme mat viac menej parametrov a podla toho urcit ako sa bude methoda menit
+	- methoda attack ma viac parametrov ak zadame len jeden zavola sa 1. methoda
+	- ak dame 2 parametre zavola sa 2 methoda
+	- ```
+	  class BasicCombat {
+		  constructor(dmg, def) {
+			  this.dmg = dmg;
+			  this.def = def;
+		  }
+		  
+		  attack(hp) {
+			  return hp - this.dmg;
+		  }
+		  
+		  attack(hp, bonusovyDef) {
+			  const novyHp = this.attack(hp) - this.bonusovyDef;
+			  
+			  if (novyHp < 0) return 0;
+			  
+			  return novyHp;
+		  }
+	  }
+	  ```
+- #### Override:
+	- v tejto situacii pouzivame existujucu methodu attack ktoru prepisujeme aby odpovedala na taku situaciu aku potrebujeme
+	- ```
+	   class BasicCombat {
+		  constructor(dmg, def) {
+			  this.dmg = dmg;
+			  this.def = def;
+		  }
+		  
+		  attack(hp) {
+			  return hp - this.dmg;
+		  }
+		  
+		  defence(damage) {
+			  return damage - this.def;
+		  }
+	  }
+	  
+	  class EnhancedCombat extends BasicCombat{
+		  constructor(dmg, def, bonus) {
+			  this.bonus = bonus;
+			  super(dmg, def);
+		  }
+		  
+		  attack(hp) {
+			  return super.attack(hp) + this.bonus;
+		  }
+	  } 
+	  ```
+- #### Polymorphism:
+	- je ked sa meni z dedenia methoda
+### TypeScript Koncepty:
+- #### Abstraction:
+- #### Implementation:
 
 
