@@ -63,6 +63,10 @@ class Car {
 	- static *field* = *value*;
 	- `Class.field;`
 	- `Class.method();`
+- #### #:
+	- field, ktory sa da pouzit len v ramci classi
+	- neda sa zavolat niekde inde
+	- `#count`
 - #### constructor:
 	- specialna methoda classy
 	- spusti sa pri vytvarani instancie
@@ -121,6 +125,15 @@ class Car {
 - #### super:
 	- Je referencia na Parent class teda Van class
 	- podobne ako "this"
+### TypeScript Keyword:
+- #### public:
+	- znamena ze field alebo methoda sa daju pouzit/zavolat mimo classy
+	- `public count: number;`
+- #### private:
+	- tento field alebo methoda sa da pouzit len v ramci classy
+- #### protected:
+	- sa Sprava podobne ako private 
+	- ale ak sa rozhodneme ze classa bude dedit, tento field alebo methoda bude viditelna v ramci classy ale aj v ramci classy, ktora ju zdedila
 
 ### Koncepty:
 - #### Inheritance:
@@ -259,19 +272,41 @@ class Car {
 	- je ked sa meni z dedenia methoda
 ### TypeScript Koncepty:
 - #### Abstraction:
- - ak pridame pred classu keyword `abstract`
- - hovorime ze class nema mat instanciu
- - takato trieda sa pouzije pri dedeni
- - akysi blueprint pre blueprint
- - ```
-    abstract class Vehicle {
-     ...
-    }
-
-    class Car extends Vehicle {
-     ...
-    }
-   ```
+	- ak pridame pred classu keyword `abstract`
+	- hovorime ze class nema mat instanciu
+	- takato trieda sa pouzije pri dedeni
+	- akysi blueprint pre blueprint
+	- ```
+		  abstract class Vehicle {
+			  ...
+		  }
+	
+		  class Car extends Vehicle {
+				...
+			}
+	  ```
 - #### Implementation:
+	- keyword `implements`
+	- vyuziva `interface` a jeho deklaracie
+	- tvori pravidla pre classu
+	- napr.
+	- ```
+		  interface CounterRules {
+			  count: number;
+			  increment(): void;
+		  } 
+		  
+		  class Counter implements CounterRules {
+			  public count: number; // Toto musi exitovat
+			  
+			  public increment(): void { // Toto tiex musi byt zadefinovane
+				  this.count++;
+			  }
+			  
+			  public decrement(): void { // NEmusi byt zadefinovane
+				  this.count--;
+			  }
+		  }
+	  ```
 
 
