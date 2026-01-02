@@ -1,5 +1,6 @@
 
 ## Promises:
+- https://youtu.be/RvYYCGs45L4?si=3iHPtTmAaSUTQY3E
 - // sluzi na vytvorenie kodu ktory neblokuje sposteni dalsieho kodu
 - // Requesty, timer, atd..
 - new Promise((resolve, reject) => { resole("Sprava") })
@@ -19,3 +20,4 @@
 -   // je asynchronna funkcia v asynku potrejujeme na nu pockat keywordom await
 -   const response = await fetch("http:\//localhost:4200");
 - }
+- https://youtu.be/vn3tm0quoqE?si=LCdbBLprhbOf1rxf

@@ -9,6 +9,7 @@ let - nova, scope based
 - console.log(x) // -> 5  global scope
 const - ako let nieje mozne reinicializovat
 
+https://youtu.be/UgEaJBz3bjY?si=DDxVWk9ro-o3En0c
 ### pravidla:
 - nesmu sa zacinat cislami
 - camel case - dobryTextTuJe

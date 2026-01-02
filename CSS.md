@@ -2,6 +2,7 @@
 
 pouzivame na pridanie stylov 
 menime vyzual stranky
+https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 
 ## Pravidla:
 - #### Cascading: 
@@ -31,6 +32,7 @@ menime vyzual stranky
 		- Styly sa aplikuju na vsetky div elementy len vtedy ak na nich podrzime misku
 	- #### pseudo elements: `span::first-letter {}`
 		- Styly sa aplikuju len na prve pismeno vsetkych span elementov
+		- https://youtu.be/e1KpKBHJOrA?si=-13-w-o9gWhPv7g4
 	- #### specificke styly:
 		- `div p {}` : Vsetky p elementy, ktore sa nachadzaju v div elemente
 		- `span > h3` : Vsetky h3 elementy, ktore su Priamy potomok (dieta) rodicovskeho elemnetu span
@@ -38,14 +40,21 @@ menime vyzual stranky
 ## Koncepty:
 - ### Typography:
 	- Uprava textu
+	- https://youtu.be/9-oefwZ6Z74?si=Z4btT9CiLuxOcgFq
 - ### Coloring:
 	- Uprava Farby
+	- Rozne zapisi:
+	- `green`
+	- `rgb(0, 50, 255)` / `rgba()`
+	- `hsl(200, 20%, 40%)` / `hsla()`
+	- https://youtu.be/vvPklRN0Tco?si=uk_LOT2RQ15_dJsf
 - ### Box Model:
 	- Predstavuje ako je navrhnuty Kazdy viditelny element:
 	- mame content: text/ine elementy
 	- padding: ako daleko je okraj on contentu
 	- border: okraj, da sa menit jeho rohy radius, farba, sirka, styl (Font)
 	- margin: ako daleko su ostatne elementy od okraja
+	- ![[Pasted image 20260102141834.png]]
 - ### Flex Box:
 	- `display: flex;` - nastavy rozvrhnutie elementu podla flex boxu
 	- `justify-content: <value>;` - ako elementy maju mat poziciu na main ose
@@ -57,6 +66,7 @@ menime vyzual stranky
 		- space-between
 	- `align-items: <value>;` - rozvrhnutie na cross ose, value su take iste ako pri prvom
 	- `flex-direction: column;` - meni main os na vertikalnu a cross na horizontalnu a elementy sa snazia tlacit pod seba
+	- https://youtu.be/K74l26pE4YA?si=OviqdDXgmKu3gKVF
 - ### Grid Layout:
 	- `display: grid;` - Nastavy rozvrhnutie na grid
 	- `grid-template-row: <value>;` `grid-template-column: <value>;`
@@ -66,6 +76,7 @@ menime vyzual stranky
 	- `repeat(<pocet>, <hodnota>)` - tato funkcia vytvory hodnoty podla \<hodnoty> a pocet hodnot je podla \<pocet>
 	- `minmax(<min>, <max>)` - specialna funkcia, ktora sa vyskytuje len pri gride
 		- vytvori sa velkost stlpca podla danych podmienok nemoze byt vecsie ako \<max> a ani mensie ako \<min>
+	- https://youtu.be/uuOXPWCh-6o?si=px3Cg3FVRS5pO4_A
 - ### Variables:
 	- mozeme zadefinovat globalne aj lokalne premenny:
 	- ```
@@ -79,6 +90,7 @@ menime vyzual stranky
 		  color: var(--farba);
 	  }
 	  ```
+	- https://youtu.be/NtRmIp4eMjs?si=AKA-jChpxyL2qlCz
 - ## Queries
 	- zacinaju sa z `@`
 	- su specialne effekty css ka

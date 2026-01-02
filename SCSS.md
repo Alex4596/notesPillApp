@@ -1,5 +1,6 @@
 podobne ako [[CSS]]
  ale je to super set [[CSS]]ka
+ https://youtu.be/akDIJa0AP5c?si=1snMk7ir7-fyyn3Y
 
 # Koncepty:
 - ## Variables:

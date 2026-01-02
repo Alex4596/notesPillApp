@@ -5,6 +5,7 @@ je to navrh ako ma nieco vyzerat a fungovat
 snazime sa pouzivat pre preddefinovanie kodu
 aby sme menej pisali
 ale musime viac naplanovat
+https://youtube.com/shorts/V49MJEhsz_I?si=ZjEbDEfHLSt-7c4J
 
 ```
 class Car {
@@ -57,6 +58,7 @@ class Car {
 		// OUTPUT: "Porsche: 963" 
 		// "This" v tomto pripade referuje na objekt ulozeny v premenne car2
 	  ```
+	  - https://youtu.be/YOlr79NaAtQ?si=DVkVaq5SzkRyNdvW
 - #### static:
 	- fieldy a methody ktore patria class, nie objektu;
 	- // bez instancie

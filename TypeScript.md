@@ -1,4 +1,4 @@
-
+https://youtu.be/zQnBQ4tB3ZA?si=Krwimcv6lS5mDREK
 # Pridelovanie Typov:
 - ## Premenna:
 	- `let prem: string;`
