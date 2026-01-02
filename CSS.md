@@ -95,9 +95,9 @@ menime vyzual stranky
 		  animation: mymove 5s infinite;
 	  }
 	  ```
-	- #### Media Query: meni styl ak sa obrazovka zmensi pod velkost 800px
+	- #### Media Query: meni styl ak sa obrazovka zmensi nad velkost 800px
 	- ```
-	  // Zmena farby pozadia pri inej mensej velkosti obrazovky
+	  // Zmena farby pozadia pri inej vecsej velkosti obrazovky
 	  @media screen and (min-width: 800px) {
 		  body {
 			background-color: lavender;
