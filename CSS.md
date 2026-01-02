@@ -79,3 +79,28 @@ menime vyzual stranky
 		  color: var(--farba);
 	  }
 	  ```
+- ## Queries
+	- zacinaju sa z `@`
+	- su specialne effekty css ka
+	- napr. animacie, menenie, hodnot vlastnosti (stylov) pri inych velkostiach obrazovky
+	- ```
+	  // custom animacie:
+	  @keyframes mymove {  0%   {top: 0px; left: 0px; background: red;}  
+		  25%  {top: 0px; left: 100px; background: blue;}  
+		  50%  {top: 100px; left: 100px; background: yellow;}  
+		  75%  {top: 100px; left: 0px; background: green;}  
+		  100% {top: 0px; left: 0px; background: red;}
+	  }
+	  div {
+		  animation: mymove 5s infinite;
+	  }
+	  ```
+	- #### Media Query: meni styl ak sa obrazovka zmensi pod velkost 800px
+	- ```
+	  // Zmena farby pozadia pri inej mensej velkosti obrazovky
+	  @media screen and (min-width: 800px) {
+		  body {
+			background-color: lavender;
+		  }
+	  }
+	  ```

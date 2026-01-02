@@ -42,12 +42,33 @@ podobne ako [[CSS]]
 - ## Mixins: 
 	- Podobne ako funkcie v programiovacych jazykoch, ale toto replikuje existujuce styly aby sa dali opakovane pouzivat
 	- ```
-	  @mixin greenAndRed() {
+	  @mixin greenAndRed {
 		  color: red;
 		  background-color: green;
 	  }
 	  
 	  p {
 		  @include greenAndRed;
+	  }
+	  ```
+	- `@if podmienka {}`
+	- `@else {}`
+	- ```
+	  // Array and Loop
+	  $sizes: 40px, 50px, 80px
+	  @each $size in $sizes {
+		  .icon-#{$size} {
+			  font-size: $size;
+		  }
+	  }
+	  ```
+	- #### Function:
+	- ```
+	  @function sum($numbers) {
+		  @each $number in $numbers {
+			  $sum: $sum + $number;
+		  }
+		  
+		  @return $sum;
 	  }
 	  ```
