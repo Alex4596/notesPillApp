@@ -2,6 +2,15 @@
 ## Ui frame work na vytavranie frontendovych aplikacii
 https://youtu.be/Ata9cSC2WpM?si=LUOpOCYhbLKdFZ-K
 
+#### Package instalacia (CLI): `npm i -g @angular/cli`
+#### Cli kody:
+- ##### Vytovrenie Projektu: `ng new <Nazov>`
+- ##### Generovanie: `ng generate <Generovana vec> <nazov/cesta>`
+- ##### Instalacia Angularovskych Package:  `ng add <Package>`
+- ##### Verzia: `ng version`
+- ##### Spustenie aplikacie v dev mode: `ng serve`
+- ##### Kompilovanie aplikacie: `ng build`
+
 ## Koncepty:
 - #### Signal:
 	- `public state = signal<Type>(/* pociatocna hodnota */)`
@@ -28,3 +37,4 @@ https://youtu.be/Ata9cSC2WpM?si=LUOpOCYhbLKdFZ-K
 [[HttpClient]]
 [[Interceptors]]
 [[Router]]
+[[AngularMaterial]]
