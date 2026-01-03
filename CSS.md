@@ -13,7 +13,7 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 	- ak nema dany styl dedi ho z jeho rodicovskeho elementu
 
 ## Syntax:
-```
+``` CSS
 <selector> {
 	<property>: <value>;
 }
@@ -55,6 +55,7 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 	- border: okraj, da sa menit jeho rohy radius, farba, sirka, styl (Font)
 	- margin: ako daleko su ostatne elementy od okraja
 	- ![[Pasted image 20260102141834.png]]
+	- https://youtu.be/Sm1ORyc2Qao?si=MCbfiHM55yTb6H_n
 - ### Flex Box:
 	- `display: flex;` - nastavy rozvrhnutie elementu podla flex boxu
 	- `justify-content: <value>;` - ako elementy maju mat poziciu na main ose
@@ -67,6 +68,7 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 	- `align-items: <value>;` - rozvrhnutie na cross ose, value su take iste ako pri prvom
 	- `flex-direction: column;` - meni main os na vertikalnu a cross na horizontalnu a elementy sa snazia tlacit pod seba
 	- https://youtu.be/K74l26pE4YA?si=OviqdDXgmKu3gKVF
+	- https://youtu.be/rPlwsRJZ_EM?si=EkdsCo2zvy2DBr0C
 - ### Grid Layout:
 	- `display: grid;` - Nastavy rozvrhnutie na grid
 	- `grid-template-row: <value>;` `grid-template-column: <value>;`
@@ -77,15 +79,16 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 	- `minmax(<min>, <max>)` - specialna funkcia, ktora sa vyskytuje len pri gride
 		- vytvori sa velkost stlpca podla danych podmienok nemoze byt vecsie ako \<max> a ani mensie ako \<min>
 	- https://youtu.be/uuOXPWCh-6o?si=px3Cg3FVRS5pO4_A
+	- https://youtu.be/E3wWl725tMQ?si=De_HetF4YU-sEv-9
 - ### Variables:
 	- mozeme zadefinovat globalne aj lokalne premenny:
-	- ```
+	- ```CSS
 	  :root{
 		  --farba: green;
 	  }
 	  ```
 	- Potom mozeme zavolat premennu v cssku cez funkciu var():
-	- ```
+	- ``` CSS
 	  p {
 		  color: var(--farba);
 	  }
@@ -95,7 +98,7 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 	- zacinaju sa z `@`
 	- su specialne effekty css ka
 	- napr. animacie, menenie, hodnot vlastnosti (stylov) pri inych velkostiach obrazovky
-	- ```
+	- ```CSS
 	  // custom animacie:
 	  @keyframes mymove {  0%   {top: 0px; left: 0px; background: red;}  
 		  25%  {top: 0px; left: 100px; background: blue;}  
@@ -108,7 +111,7 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 	  }
 	  ```
 	- #### Media Query: meni styl ak sa obrazovka zmensi nad velkost 800px
-	- ```
+	- ```CSS
 	  // Zmena farby pozadia pri inej vecsej velkosti obrazovky
 	  @media screen and (min-width: 800px) {
 		  body {
@@ -116,3 +119,4 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 		  }
 	  }
 	  ```
+	- https://youtu.be/n9yI6fjkrfE?si=M-x6GYt-ouJXXCzc

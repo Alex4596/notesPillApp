@@ -7,16 +7,16 @@
 - Modular
 
 ### Definicia funkcie:
-```
-function test(*parametre*) {
+```JavaScript
+function test(parametre) {
 	console.log("Daco");
-	 return *navratova hodnota*;
+	 return "navratova hodnota";
 }
 
 ```
 
 ### Volanie funkcie:
-`test(parametre)`
+`test(parametre);`
 
 https://youtu.be/nuML9SmdbJ4?si=sLxO4zvUOPMUVfZ5
 ### bonus:

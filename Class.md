@@ -7,7 +7,7 @@ aby sme menej pisali
 ale musime viac naplanovat
 https://youtube.com/shorts/V49MJEhsz_I?si=ZjEbDEfHLSt-7c4J
 
-```
+```JavaScript
 class Car {
 	static daco = 5;
 	constructor(brand, model) {
@@ -36,7 +36,7 @@ class Car {
 ### Keyword
 - #### this:
 	- robi referenciu na aktualnu referenciu classy alebo na dany objekt
-	- ```
+	- ```JavaScript
 		class Car {
 			static daco = 5;
 			constructor(brand, model) {
@@ -73,12 +73,12 @@ class Car {
 	- specialna methoda classy
 	- spusti sa pri vytvarani instancie
 	- zvycajne sa pouziva na zapisanie hodnot do objektu
-	- constructor(*params*) {*body*}
+	- `constructor(*params*) {*body*}`
 - #### getter:
 	- methoda ktora sa vola ako field ktora vracia hodnotu
 	- zvycajne sa ta hodnota = hodnote fieldu
 	- teda robi operaciu read
-	- ```
+	- ```JavaScript
 		class Car {
 		  name;
 		  get name() {
@@ -94,7 +94,7 @@ class Car {
 	- podobne ako getter
 	- ale namiesto read 
 	- robi write
-	- ```
+	- ``` JavaScript
 	  	class Car {
 		  name;
 		  set name(meno) {
@@ -116,7 +116,7 @@ class Car {
 	- rozsirenie existujucej class
 	- class Van je trieda, ktora pouziva vlastnosti a methody z triedy Car
 	- napr:
-	- ``` 
+	- ``` JavaScript
 	  class Van extends Car {
 		  constructor(brand, model, weight) {
 			  super(brand, model);
@@ -146,7 +146,7 @@ class Car {
 - #### Composition:
 	- Je technika pri objektovom programovani, kedy napr. mame Human class a Monster class a chceme aby mali nejake vlastnosti alebo funkcie spolocne napr. funkcia utok a obrana
 	- mozeme mat viac tychto vlastnosti
-	- ```
+	- ```JavaScript
 	  class BasicCombat {
 		  constructor(dmg, def) {
 			  this.dmg = dmg;
@@ -221,7 +221,7 @@ class Car {
 	- Mozeme mat viac menej parametrov a podla toho urcit ako sa bude methoda menit
 	- methoda attack ma viac parametrov ak zadame len jeden zavola sa 1. methoda
 	- ak dame 2 parametre zavola sa 2 methoda
-	- ```
+	- ```JavaScript
 	  class BasicCombat {
 		  constructor(dmg, def) {
 			  this.dmg = dmg;
@@ -243,7 +243,7 @@ class Car {
 	  ```
 - #### Override:
 	- v tejto situacii pouzivame existujucu methodu attack ktoru prepisujeme aby odpovedala na taku situaciu aku potrebujeme
-	- ```
+	- ```JavaScript
 	   class BasicCombat {
 		  constructor(dmg, def) {
 			  this.dmg = dmg;
@@ -278,7 +278,7 @@ class Car {
 	- hovorime ze class nema mat instanciu
 	- takato trieda sa pouzije pri dedeni
 	- akysi blueprint pre blueprint
-	- ```
+	- ```JavaScript
 		  abstract class Vehicle {
 			  ...
 		  }
@@ -292,7 +292,7 @@ class Car {
 	- vyuziva `interface` a jeho deklaracie
 	- tvori pravidla pre classu
 	- napr.
-	- ```
+	- ```JavaScript
 		  interface CounterRules {
 			  count: number;
 			  increment(): void;

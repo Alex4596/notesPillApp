@@ -5,7 +5,7 @@
 - ## Observable:
 	- Objekt ktory emituje data
 	- je zakladom celeho RxJS
-	- ```
+	- ``` TypeScript
 	  const observable = new Observable((x) => {
 		  x.next("Data1");
 		  x.next("Data2")
@@ -13,7 +13,7 @@
 	  ```
 - ## Subscription:
 	- je Forma alebo methoda, cez ktoru vieme spracovat data
-	- ```
+	- ``` TypeScript
 	  observable.subscribe(data => {
 		  console.log(data);
 	  })
@@ -21,7 +21,7 @@
 - ## Observer:
 	- je objekt, ktory je vlozeny do subcribu
 	- urcuje ako sa spracuju rozne vysledky dat
-	- ```
+	- ``` TypeScript
 	  observable.subscribe({
 		  next(data) {
 			  console.log(data);
@@ -39,7 +39,7 @@
 	- do ktorej sa daj dat operatory
 	- stream of data pipeline
 	- data prejdu cez operatory, ktore z nimi mozu nieco zpravit
-	- ```
+	- ``` TypeScript
 	  observable.pipe();
 	  ```
 - ## Operators:
@@ -50,7 +50,7 @@
 	- filter(): podobne ako pri poliach
 	- tap(): nemeni hodnotu ale ju len pouzije
 	- atd...
-	- ```
+	- ``` TypeScript
 	  observable.pipe(
 		map(x => x * 2)	  
 	  ).subscribe(data => console.log(data));

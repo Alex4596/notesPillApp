@@ -1,10 +1,10 @@
 ## Primitivne:
-string - text, index (text\[0]), + concat;
-number - artimetiku (+, - , * ,  /), binary, octan, hex, int, float, negative,  2000  = 2e3;
+string - text, index (`text[0]`), + concat;
+number - artimetiku (`+, - , * ,  /`), binary, octan, hex, int, float, negative,  2000  = 2e3;
 - https://youtu.be/O0gmXbN7lVE?si=6xRvHKSLZfp1Ljxb
 BigInt - velke int cisla;
-boolean - (true, false), >, <, == , === , !=, !== , <=, >=/ &&, ||, !,  if (podmienka);
-undefined - (undefined) ( let prem = fun(); ), defaultna hodnota js;
+boolean - (true, false), `>, <, == , === , !=, !== , <=, >=/ &&, ||, !,  if (podmienka);`
+undefined - (undefined) ( `let prem = fun();` ), defaultna hodnota js;
 null - (null), nic;
 
 ## Neprimitivne:
@@ -12,12 +12,14 @@ Object - (` { name:  "Dakto", hobbys: ["Futball", "PRogramovanie"] }` ) - proper
 - `obj.name` 
 - `obj["name"]`
 Array: - ( \[1, 2, 3] ) \[0], property = length = 3
-- for(let i = 0; i < array.length; i++)
+- `for(let i = 0; i < array.length; i++)`
 - `for(let x of array)` - key = index
 - `for(let x in array)` - value 
 - #### Methody:
-	- .map(): https://youtu.be/DC471a9qrU4?si=qbEEQu_8cuygWiSs
-	- .reduce(): https://youtu.be/tVCYa_bnITg?si=a129N4mHXXB0STps
+	- `.map()`: 
+		- https://youtu.be/DC471a9qrU4?si=qbEEQu_8cuygWiSs
+		- https://youtu.be/IWgK2Ew04h8?si=jiUJ23wyEdSMvqFn
+	- `.reduce()`: https://youtu.be/tVCYa_bnITg?si=a129N4mHXXB0STps
 
 Truly:
 - string - *
@@ -25,9 +27,11 @@ Truly:
 - Object - `{ name: null }`
 - Array - `[0]`
 Falsy:
-- string - "" - prazdny string
-- number - 0, NaN (Not a Number +> pretypovanie "x" => cislo)
+- string - `""` - prazdny string
+- number - `0`, NaN (Not a Number -> pretypovanie `"x"` -> cislo)
 - undefined
 - null
 - Object - `{ }`
 - Array - `[ ]`
+
+https://youtu.be/KMLOWkGAxVc?si=1ftkFyknTFFp_Ejf

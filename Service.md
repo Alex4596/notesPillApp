@@ -10,7 +10,7 @@ mozu byt pouzite v celej aplikacii na viacerych miestach pomocou Dependency Inje
 
 ### Cli kod: `ng g s <route>.service`
 ## Example:
-```
+``` TypeScript
 @Injectable({
 	providedIn: 'root'
 })
@@ -31,7 +31,7 @@ export default class PillSevice {
 #### Dokaze tak tiez riesit problem:
 - komponenty su uzavrete, to im dodava bezpecnost ale niekedy chceme aby tieto casti kodu spolu komunikovali a dokazali zdielat informacie
 #### Example: 
-```
+``` TypeScript
 @Component({
 	standalone: true,
 	template: `<section>
@@ -50,7 +50,7 @@ export class Counter {
 ##### V tomto priklade ak pouzijeme Counter komponent 4 krat a stlacime tlacidlo + tak sa pripocita hodnota iba  v tom jednom komponente
 
 #### Example 2:
-```
+``` TypeScript
 @Component({
 	standalone: true,
 	template: `<section>

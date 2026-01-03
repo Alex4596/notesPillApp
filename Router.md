@@ -12,7 +12,7 @@
 	- `component: Couter`
 	- nacita Counter komponent namiesto router-outlet
 - ### Children: 
-	- ```
+	- ``` TypeScript
 	  { 
 		  path: 'pill',
 		  component: Pill,

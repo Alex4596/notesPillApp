@@ -2,7 +2,7 @@
 ## Je alternativa Fetch funkcie prisposobena pre angular
 
 ### Tradicna Fetch funkcia:
-- ```
+- ``` TypeScript
   let jsonData = null;
   fetch("http:localhost:8080/pill")
 	  .then(response => response.json())
@@ -16,7 +16,7 @@
 - Ak chceme spracovat data musime pouzit methodu `.json()`
 
 ### HttpClient:
-```
+``` TypeScript
 const http = inject(HttpClient);
 const jsonData = signal<any>(null);
 

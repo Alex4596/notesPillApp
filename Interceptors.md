@@ -3,7 +3,7 @@
 ##### Cli kod: `ng g interceptor <Route>.interceptor`
 - pozor na `ng g i` = vytvori interface
 
-```
+``` TypeScript
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const authToken = 'your-token-here';
   
@@ -15,7 +15,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
 ```
 
 ### !POZOR Interceptor musime zapisat do app.config aby sa aplikoval
-```
+``` TypeScript
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(

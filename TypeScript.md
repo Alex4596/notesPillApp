@@ -47,7 +47,7 @@ https://youtu.be/zQnBQ4tB3ZA?si=Krwimcv6lS5mDREK
 # Interface: 
 - Ak chceme dat objekt ako typ do type keywordu
 - je lepsie a ma viac vyhod ak ho zadefinujeme ako interface
-- ```
+- ```JavaScript
   interface Person {
 	  name: string;
 	  age: number;
@@ -66,7 +66,7 @@ https://youtu.be/zQnBQ4tB3ZA?si=Krwimcv6lS5mDREK
 # Generics & Diamond Operator:
 - ked definujeme funkciu alebo classu
 - vyme pridat generics
-- ```
+- ```JavaScript
   function daco<T>(x: T): T {
 	  return x;
   }
@@ -75,3 +75,6 @@ https://youtu.be/zQnBQ4tB3ZA?si=Krwimcv6lS5mDREK
   - je datovy typ T je flexibilny a teda vsetko co je T musi mat taky isty datovy typ
   - `const prem = daco<number>(5)`
   - Aj je v Diamantovom operatore zadefinovany typ explicitne plati ze T = number
+
+
+https://youtu.be/nFwmB1_iQ7A?si=5I_Kduks5bKbj2Q0
