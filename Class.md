@@ -125,7 +125,7 @@ class Car {
 	  }
 	  ```
 - #### super:
-	- Je referencia na Parent class teda Van class
+	- Je referencia na Parent class teda Car class
 	- podobne ako "this"
 ### TypeScript Keyword:
 - #### public:
