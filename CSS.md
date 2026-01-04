@@ -30,6 +30,7 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 		- Pre vsetky elementy  input z atributom, ktoreho hodnota je "text"
 	- #### pseudo class: `div:hover {}`
 		- Styly sa aplikuju na vsetky div elementy len vtedy ak na nich podrzime misku
+		- https://youtu.be/kpXKwDGtjGE?si=6qbv2DM0s0TQNGGI
 	- #### pseudo elements: `span::first-letter {}`
 		- Styly sa aplikuju len na prve pismeno vsetkych span elementov
 		- https://youtu.be/e1KpKBHJOrA?si=-13-w-o9gWhPv7g4
@@ -98,6 +99,7 @@ https://youtu.be/OEV8gMkCHXQ?si=aZ_cRQtlUkdKsX0s
 	- zacinaju sa z `@`
 	- su specialne effekty css ka
 	- napr. animacie, menenie, hodnot vlastnosti (stylov) pri inych velkostiach obrazovky
+	- https://youtu.be/HZHHBwzmJLk?si=NmUd2h1SM5XvCEnL
 	- ```CSS
 	  // custom animacie:
 	  @keyframes mymove {  0%   {top: 0px; left: 0px; background: red;}  
