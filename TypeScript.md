@@ -1,4 +1,5 @@
 https://youtu.be/zQnBQ4tB3ZA?si=Krwimcv6lS5mDREK
+https://youtu.be/nFwmB1_iQ7A?si=ctki0lcsWAz9CSpr
 # Pridelovanie Typov:
 - ## Premenna:
 	- `let prem: string;`
@@ -76,5 +77,18 @@ https://youtu.be/zQnBQ4tB3ZA?si=Krwimcv6lS5mDREK
   - `const prem = daco<number>(5)`
   - Aj je v Diamantovom operatore zadefinovany typ explicitne plati ze T = number
 
-
-https://youtu.be/nFwmB1_iQ7A?si=5I_Kduks5bKbj2Q0
+# Enums:
+- ##### Su konstanty v skupine konstant
+- ###### funguje tiez ako type
+- ``` TypeScript
+  // Definicia:
+  enum ProductCategory {
+	  CLOTHES = "clothes",
+	  TECHNOLOGY = "technology",
+	  FOOD = "food"
+  }
+  
+  // Volanie: 
+  console.log(ProductCategory.TECHNOLOGY);
+  // OUTPUT: "technology"
+  ```
