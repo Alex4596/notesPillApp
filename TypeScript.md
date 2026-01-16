@@ -92,3 +92,4 @@ https://youtu.be/nFwmB1_iQ7A?si=ctki0lcsWAz9CSpr
   console.log(ProductCategory.TECHNOLOGY);
   // OUTPUT: "technology"
   ```
+

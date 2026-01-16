@@ -4,7 +4,7 @@
 - https://youtu.be/Qx8Xx4djxqs?si=5YvNvC9XV-oMk5II
 - // sluzi na vytvorenie kodu ktory neblokuje sposteni dalsieho kodu
 - // Requesty, timer, atd..
-- `new Promise((resolve, reject) => { resole("Sprava") });`
+- `new Promise((resolve, reject) => { resolve("Sprava") });`
 - // Co sa stane ak je resolve:
 - `.then(msg => cosnoel.log(msg));`  
 - // Co sa stane ak je reject:

@@ -24,7 +24,7 @@ class Car {
 ## Volanie:
 
 // Instancia classy = object
-`const car = new Car("Ford', Mustang);`
+`const car = new Car("Ford", Mustang);`
 // volanie methody na object
 `car.drive()`
 // volanie statickeho fieldu nie z objectu ale z classy

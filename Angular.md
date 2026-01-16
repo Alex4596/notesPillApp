@@ -17,6 +17,17 @@ https://youtu.be/Ata9cSC2WpM?si=LUOpOCYhbLKdFZ-K
 	- *state*: nazov fieldy/premenny
 	- *Type*: Optional, je typ akeho moze byt state
 	- *pociatocna hodnota*: hodnota, ktora je nastavena ako prva pri spusteni programu
+	- ----
+	- ##### Computed:
+	- Funkcia, ktora prebera jeden parameter: callback funkciu, ktora obsahuje signal 
+	- a navratova hodnota callbacku je nova hodnota signalu
+	- ```TypeScript
+	class Component {
+		public num = signal<number>(0);
+		public numSqrt = computed(() => num() * num());
+	}	  
+	  ```
+	- Hodnota computed sa stale zmeni ak sa bude menit *num* signal
 - #### Life Cycle Hooks:
 	- su specialne funkcie/methody, ktore sa vykonavaju za urcitych podmienok
 	- `onInit` interface ma v sebe deklaraciu methody `ngOnInit: void`
